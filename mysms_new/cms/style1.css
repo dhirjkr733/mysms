@@ -1,0 +1,39 @@
+font
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #000000;
+}
+
+font.smaller { font-size: 8pt; }
+font.smaller_faded { 
+	font-size: 8pt;
+	color: #666666; 
+}
+font.smaller_even { font-size: 6pt; }
+font.slightly_bigger { font-size: 12pt; }
+font.bigger { font-size: 14pt; }
+font.bigger_even { font-size: 16pt; }
+font.warning { color: #CC3333; }
+font.warning_smaller { 
+	color: #CC3333; 
+	font-size: 8pt;
+}
+font.small_spaced {
+	font-size: 8pt;
+	letter-spacing: 5pt;
+	color: #666666;
+}
+a:link { color: #0033FF; }
+a:visited { color: #6600CC; }
+a:hover { color: #CC3333; }
+a:active { color: #CC3333; }
+
+td
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}

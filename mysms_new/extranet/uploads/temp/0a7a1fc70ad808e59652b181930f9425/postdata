@@ -1,0 +1,81 @@
+-----------------------------23281168279961
+Content-Disposition: form-data; name="firstname"
+
+Bruce
+-----------------------------23281168279961
+Content-Disposition: form-data; name="lastname"
+
+Wayne
+-----------------------------23281168279961
+Content-Disposition: form-data; name="company"
+
+Wayne Enterprises
+-----------------------------23281168279961
+Content-Disposition: form-data; name="state"
+
+NJ
+-----------------------------23281168279961
+Content-Disposition: form-data; name="county"
+
+
+-----------------------------23281168279961
+Content-Disposition: form-data; name="email"
+
+karlbell@netzero.com
+-----------------------------23281168279961
+Content-Disposition: form-data; name="phone1"
+
+212
+-----------------------------23281168279961
+Content-Disposition: form-data; name="phone2"
+
+123
+-----------------------------23281168279961
+Content-Disposition: form-data; name="phone3"
+
+4567
+-----------------------------23281168279961
+Content-Disposition: form-data; name="phone4"
+
+1234
+-----------------------------23281168279961
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+2097152
+-----------------------------23281168279961
+Content-Disposition: form-data; name="attachment"; filename="testing.html"
+Content-Type: text/html
+
+<body onload='document.form1.testing.focus();'>
+<table width="800" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>testig 1</td>
+  </tr>
+  <tr>
+    <td>testig 1</td>
+  </tr>
+  <form name="form1">
+    <input type=text name=testing>
+  </form>
+</table>
+<script language="javascript">
+  alert("hello world");
+</script>
+</body>
+-----------------------------23281168279961
+Content-Disposition: form-data; name="comments"
+
+'Testing do not proceed!'
+-----------------------------23281168279961
+Content-Disposition: form-data; name="page"
+
+/extranet/implementation/upload_confirm.php
+-----------------------------23281168279961
+Content-Disposition: form-data; name="sessionid"
+
+0a7a1fc70ad808e59652b181930f9425
+-----------------------------23281168279961
+Content-Disposition: form-data; name="userid"
+
+6
+-----------------------------23281168279961--

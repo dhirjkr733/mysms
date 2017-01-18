@@ -1,0 +1,276 @@
+/* ...............................NEW FORM........................*/
+
+#middle-wrap {width:755px;position: relative;}
+#products-services-bug {position: absolute;bottom:10px;right:10px;padding:20px 10px; background-color:#0f1477; }
+#products-services-bug a {padding-left:27px;display:block;background: url("images/icon-pdf.gif") no-repeat 0px 5px;color:#fff;text-decoration: none;}
+#products-services-bug a:hover {text-decoration: underline;}
+
+/* ...............................NEW FORM........................*/
+	.formBG {
+		background: url(images/toppic_home_new.jpg) top right no-repeat;
+	}
+	
+	.loginForm {
+		color: #fff;
+		font-size: 10px;
+		font-family: "Lucida Grande", verdana, arial, sans-serif;
+		background: #1f2367;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.loginForm .content {
+		padding: 6px 0 0 15px;
+		background: #1f2367 url(images/bg_form.gif) bottom right no-repeat;
+		vertical-align: top;
+	}
+	
+	.textField {
+		font-size: 10px;
+		margin: 2px 0 4px 0;
+		border-top: 1px solid #666;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 1px solid #666;
+	}
+	
+	.goBtn {
+		float: right;
+		margin: 2px 25px 0 0;
+	}
+	
+	.remember {
+		float: left;
+	}
+	
+	a.forgot:link, a.forgot:visited, a.forgot:active, a.forgot:hover {
+		color: #00c0ff;
+		font-size: 10px;
+		font-family: "Lucida Grande", verdana, arial, sans-serif;
+		padding-top: 0px;/*padding-top: 10px;*/
+		text-decoration: underline;
+	}
+	
+/* ...............................PAGE SETUP........................*/
+body  {
+	background : #FFFFFF;
+	margin : 0px 0px 0px 5px;
+	font-size : 11px;
+	font-family : Tahoma;
+	font-weight : normal;
+	font-style : normal;
+	color : #000000;
+}
+
+/* ............................... LINKS ....................................*/
+A  {
+	text-decoration : none;
+	font-size : 12px;
+	font-family : Tahoma;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A:Link  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A:Hover  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+	text-decoration : underline;
+}
+
+A:Visited  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A:Active  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+A.nav1  {
+	text-decoration : none;
+	font-size : 12px;
+	font-family : Tahoma;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A.nav1:Link  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A.nav1:Active  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A.nav1:Visited  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A.nav1:Hover  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+	text-decoration : underline;
+}
+
+A.highlighted:Link  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+	text-decoration: none;
+}
+
+A.highlighted:Active  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+	text-decoration: none;
+}
+
+A.highlighted:Visited  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+
+A.highlighted:Hover  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+	text-decoration: none;
+}
+
+.text1  {
+	text-decoration : none;
+	font-size : 11px;
+	font-family : Tahoma;
+	font-weight : normal;
+	font-style : normal;
+	color : #000000;
+}
+.text1:Link  {
+	font-family : Tahoma;
+	font-size : 11px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+.text1:Active  {
+	font-family : Tahoma;
+	font-size : 11px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+.text1:Visited  {
+	font-family : Tahoma;
+	font-size : 11px;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+
+
+.textbody {
+	font-family: Tahoma;
+	font-size: 12px;
+}
+.change {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	width: 160px;
+}
+
+.dltext  {
+	text-decoration : none;
+	font-size : 12px;
+	font-family : Tahoma;
+	font-weight : bold;
+	font-style : normal;
+	color : #CC0000;
+}
+.dltext:Link  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+
+.dltext:Active  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+
+.dltext:Visited  {
+	font-family : Tahoma;
+	font-size : 12px;
+	font-weight : bold;
+	font-style : normal;
+	color : #0000FF;
+}
+.bluetext  {
+	text-decoration : none;
+	font-size : 11px;
+	font-family : Tahoma;
+	font-weight : normal;
+	font-style : normal;
+	color : #0000FF;
+}
+.headerbg {
+	background-image: url(/images/headerbg.gif);
+	background-repeat: repeat-y;
+}
+
+.headline {
+	color:#0f1477;
+	font-size:14px;
+}

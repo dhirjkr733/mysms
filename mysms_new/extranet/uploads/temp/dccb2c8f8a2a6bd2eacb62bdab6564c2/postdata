@@ -1,0 +1,66 @@
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="firstname"
+
+Bruce
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="lastname"
+
+Wayne
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="company"
+
+Wayne Enterprises
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="state"
+
+NJ
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="county"
+
+
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="email"
+
+karlbell@netzero.com
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="phone1"
+
+212
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="phone2"
+
+123
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="phone3"
+
+4567
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="phone4"
+
+1234
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+2097152
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="attachment"; filename="C:\Documents and Settings\Harris\My Documents\serial.txt"
+Content-Type: text/plain
+
+Name: BlueSpecial   s/n: H8ZEP-O7C2U-L6L4E-G1i3J
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="comments"
+
+test
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="page"
+
+/extranet/implementation/upload_confirm.php
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="sessionid"
+
+dccb2c8f8a2a6bd2eacb62bdab6564c2
+-----------------------------7d62fd39f0039c
+Content-Disposition: form-data; name="userid"
+
+6
+-----------------------------7d62fd39f0039c--
