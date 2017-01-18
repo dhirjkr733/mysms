@@ -265,6 +265,50 @@ function form_login ($action, $method='POST', $forgot_password_target='') {
 	</tr>
 </table>
 
+<!--
+  <table width="170" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="15" class="text1"><img src="/images/spacer.gif" width="1" height="1"></td>
+    </tr>
+    <tr>
+      <td class="text1">E-mail Address<br>
+          <input name="email" type="text" size="18" value="<?=$rememberemail;?>">
+      </td>
+    </tr>
+    <tr>
+      <td height="5" class="text1"><img src="/images/spacer.gif" width="1" height="1"></td>
+    </tr>
+    <tr>
+      <td class="text1">MySMS Password<br>
+          <input name="password" type="password" size="18" value="<?=$rememberpassword;?>">
+      </td>
+    </tr>
+    <tr>
+      <td class="text1"><input name="remeberme" type="checkbox" <?if(isset($_COOKIE['ftp']))echo'checked';?>> Remember Me <input type="image" src="/images/spacer.gif"></td>
+    </tr>
+    <tr>
+      <td height="5" class="text1"><img src="/images/spacer.gif" width="5" height="5">
+      <input name="login" type="hidden" size="18" value="login"></td>
+    </tr>
+    <tr>
+      <td class="nav1"><table width="170" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
+            <td width="46"><a href="javascript:document.login.submit();">Login</a></td>
+            <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
+            <td width="104"><a href="<?php print $forgot_password_target ?>">Forgot password?</a></td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td height="10" class="text1"><img src="/images/spacer.gif" width="5" height="5"></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+-->
+
 <?php
 }
 /**
@@ -295,12 +339,12 @@ function showhideCounties(){
 			<form name="register" method="post" action="register_confirm.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : ""; ?>">
                   </td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td align="left" class="text1">Confirm Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td align="left" class="text1">Confirm E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email1" class="uploadinputs" value="<?php print $edit ? $info['email1'] : ""; ?>">
                   </td>
                 </tr>
@@ -514,7 +558,7 @@ function form_delete_user($info="") {
 			<form name="edit_user" method="post" action="edit_user_confirmation.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;</td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;</td>
                   <td><input name="email" type="hidden" class="uploadinputs" value="<?php print stripslashes($info['email']); ?>"><?php print stripslashes($info['email']); ?>
                   </td>
                 </tr>
@@ -652,7 +696,7 @@ function showhideCounties(){
 			<form name="edit_user" method="post" action="<?php print $target; ?>">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? stripslashes($info['email']) : ""; ?>">
                   </td>
                 </tr>
@@ -931,12 +975,12 @@ function showhideCounties(){
 			<form name="add_user" method="post" action="edit_user_confirmation.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : ""; ?>">
                   </td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td align="left" class="text1">Confirm Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td align="left" class="text1">Confirm E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email1" class="uploadinputs" value="<?php print $edit ? $info['email1'] : ""; ?>">
                   </td>
                 </tr>
@@ -1615,7 +1659,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -1679,7 +1723,7 @@ function showhideCounties(){
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
                   <td align="left" class="text1">&nbsp;</td>
-                  <td><span class="text1"><b>SMS Customer Support Hours:</b><br>
+                  <td><span class="text1"><b>Help Desk Hours:</b><br>
                     9:00 a.m. - 8:30 p.m. (Eastern)<br>
                     6:00 a.m. - 5:30 p.m. (Pacific)<br>
                     After Hours Support is available at $150/hr </span></td>
@@ -1832,7 +1876,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -1979,7 +2023,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="79" align="left" class="text1">Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="79" align="left" class="text1">E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2201,7 +2245,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="79" align="left" class="text1">Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="79" align="left" class="text1">E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2429,7 +2473,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2566,7 +2610,7 @@ function showhideCounties(){
     (Shown only if CA selected)</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Your Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">Your E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>

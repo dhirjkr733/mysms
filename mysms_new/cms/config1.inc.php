@@ -16,7 +16,7 @@ $tech_sup_phone = "949-266-2853";
 $die_mesg = "Ooops! Database problem...please report the error below to <A HREF=\"mailto:$tech_sup_email\">$tech_sup_email</A> or $tech_sup_phone. Thanks for helping us help you!<BR><BR>Database Error = ";
 $contact_support = "Ooops! Please report the error below to <A HREF=\"mailto:$tech_sup_email\">$tech_sup_email</A> or $tech_sup_phone. Thanks for helping us help you!";
 // Absolute path for includes
-$abs_path = "/var/www/vhosts/mysms.firstamsms.com/html/cms/";
+$abs_path = "/var/www/vhosts/mysms.firstamsms.com/httpdocs/cms/";
 // Http path
 $remote_path = "http://mysms.firstamsms.com/cms/";
 // MySQL connection

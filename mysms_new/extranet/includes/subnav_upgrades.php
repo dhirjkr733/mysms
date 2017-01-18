@@ -22,7 +22,7 @@
         </tr>
         <tr valign="top">
           <td><img src="/images/arrow2.gif" width="4" height="17"></td>
-          <td class="nav1"><a href="/extranet/upgrades/schedule_upgrade.php" <?php if ($file=="schedule_upgrade.php") echo "class=\"highlighted\""; ?>>Schedule your upgrade with SMS Customer Support </a></td>
+          <td class="nav1"><a href="/extranet/upgrades/schedule_upgrade.php" <?php if ($file=="schedule_upgrade.php") echo "class=\"highlighted\""; ?>>Schedule your upgrade with the Help Desk </a></td>
         </tr>
     </table></td>
   </tr>

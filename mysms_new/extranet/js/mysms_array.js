@@ -122,7 +122,7 @@ addmenu(menu=["home","",,180,1,"",style2,,"left",effect,,,,,,,,,,,,
 
 addmenu(menu=["support","",,180,1,"",style2,,"left",effect,,,,,,,,,,,,
 ,"Online Support", "/extranet/support/online_support.php",,,1
-,"Email SMS Customer Support", "mailto:software.support@smscorp.com",,,1
+,"Email the Help Desk", "mailto:software.support@firstam.com",,,1
 // ,"Centra&reg; Login", "https://eclassroom.firstam.net/main/User/GuestAttend.jhtml?s",,,1
 // ,"Download Centra&reg; Client Software", "/centra_download.php",,,1
 ,"Product FAQ's", "/extranet/support/faqs.php",,,1
@@ -176,7 +176,7 @@ addmenu(menu=["feedback","",,180,1,"",style2,,"left",effect,,,,,,,,,,,,
 addmenu(menu=["contact","",,180,1,"",style2,,"left",effect,,,,,,,,,,,,
 // ,"Management", "http://www.firstamsms.com/contact/management.php",,,1
 // ,"Sales", "http://www.firstamsms.com/contact/index.php",,,1
-,"SMS Customer Support", "/public/contact/helpdesk_sms.php",,,1
+,"Help Desk", "/public/contact/helpdesk_sms.php",,,1
 ,"TrustLink Help Desk", "/public/contact/helpdesk_trustacct.php",,,1
 ,"1099 Help Desk", "/public/contact/helpdesk_1099.php",,,1
 // ,"Webmaster", "mailto:support@calibermg.com",,,1
