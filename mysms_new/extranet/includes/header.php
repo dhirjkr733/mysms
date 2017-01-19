@@ -1,4 +1,6 @@
 <?php 
+
+
 $me = $_SERVER['PHP_SELF'];  
 $Apathweb = explode("/", $me);  
 $myFileName = array_pop($Apathweb);  

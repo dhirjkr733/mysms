@@ -16,9 +16,12 @@ if (!$logged_in) { // already logged in?
 	exit();
 }
 if (isset($_POST['product'])) {
+    echo 'dfaf';
 	$product = $_POST['product'];
 } else {
 	$product = $_SESSION['default_product'];
+       echo 'fass';
+        
 }
 $ftp_info = getFTP($product,'Software Upgrade');
 $directory_listing = getDirectoryListing($ftp_info);

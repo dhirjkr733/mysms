@@ -1,15 +1,30 @@
 <?php
+
 // define constants
-define("APPLICATION_HOME_PAGE","http://mysms.firstamsms.com/index.php");
-define("APPLICATION_ADMIN_HOME_PAGE","http://mysms.firstamsms.com/admin/index.php");
-define("EXTRANET_HOME_PAGE","http://mysms.firstamsms.com/extranet/index.php");
-define("FTP_TEMP_DIR","/var/www/vhosts/mysms.firstamsms.com/html/extranet/downloads/temp/");
-define("UPLOADED_FILES_TEMP_DIR","/var/www/vhosts/mysms.firstamsms.com/html/extranet/uploads/temp/");
-define("DEBUG_EMAIL",'karl@calibermg.com'); // application errors go here
+//define("APPLICATION_HOME_PAGE","http://mysms.firstamsms.com/index.php");
+//define("APPLICATION_ADMIN_HOME_PAGE","http://mysms.firstamsms.com/admin/index.php");
+//define("EXTRANET_HOME_PAGE","http://mysms.firstamsms.com/extranet/index.php");
+//define("FTP_TEMP_DIR","/var/www/vhosts/mysms.firstamsms.com/httpdocs/extranet/downloads/temp/");
+//define("UPLOADED_FILES_TEMP_DIR","/var/www/vhosts/mysms.firstamsms.com/httpdocs/extranet/uploads/temp/");
+define("APPLICATION_HOME_PAGE","http://local.mysms/index.php");
+define("APPLICATION_ADMIN_HOME_PAGE","http://local.mysms/admin/index.php");
+define("EXTRANET_HOME_PAGE","http://local.mysms/extranet/index.php");
+define("FTP_TEMP_DIR","/var/www/html/mysms/extranet/downloads/temp/");
+define("UPLOADED_FILES_TEMP_DIR","/var/www/html/mysms/extranet/uploads/temp/");
+
+
+//define("DEBUG_EMAIL",'karl@calibermg.com'); // application errors go here
+define("DEBUG_EMAIL",'dhiraj.kumar@rootinfosol.com'); // application errors go here
+
 // db connection info
-define("DATABASE","mysms3_db"); // db name
-define("DATABASE_USER","dbsms3"); // db username
-define("DATABASE_PASS","exdb4mysms2"); // db password
+//define("DATABASE","mysms3_db"); // db name
+//define("DATABASE_USER","dbsms3"); // db username
+//define("DATABASE_PASS","exdb4mysms2"); // db password
+define("DATABASE","mysms"); // db name
+define("DATABASE_USER","root"); // db username
+define("DATABASE_PASS","root"); // db password
+
+
 define("DATABASE_HOST","localhost"); // db location i.e. "localhost" or "www.calibermediagroup.com" or ip address
 // salt for db encryption;
 define("SALT","cR8ZyGI");
@@ -20,7 +35,7 @@ define("IB_DATABASE_PASS","maildb4firstam"); // db password
 define("IB_DATABASE_HOST","204.232.157.138"); // db location i.e. "localhost" or "www.calibermediagroup.com" or ip address
 // end define constants
 // begin define global arrays
-$CALIFORNIA_COUNTIES_array = array(
+$CALIFORNIA_COUNTIES_ARRAY = Array(
 	'Northern California',
 	'Imperial County',
 	'Kern County',
@@ -33,7 +48,7 @@ $CALIFORNIA_COUNTIES_array = array(
 	'Santa Barbara County',
 	'Ventura County'
 	);
-$REGISTRATION_STATUS_array = array(
+$REGISTRATION_STATUS_ARRAY = Array(
 	'Pending',
 	'Approved',
 	'Credit Hold',
@@ -41,7 +56,7 @@ $REGISTRATION_STATUS_array = array(
 	'Denied',
 	'Profile Update'
 	);
-$FTP_TYPE_array = array(
+$FTP_TYPE_ARRAY = Array(
 	'Check Samples',
 	'FAQ',
 	'Reports',
@@ -51,7 +66,7 @@ $FTP_TYPE_array = array(
 	'Training Manual',
 	'Tutorial'
 	);
-$STATE_array = array(
+$STATE_ARRAY = array(
 	"AK"=>"Alaska",
 	"AL"=>"Alabama",
 	"AZ"=>"Arizona",

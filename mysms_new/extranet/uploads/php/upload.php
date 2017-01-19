@@ -1,4 +1,4 @@
-<?
+<?php
 
 # PHP File Uploader with progress bar Version 1.12
 # Copyright (C) Raditha Dissanyake 2003
@@ -46,7 +46,7 @@
 <h2>File uploader with progress bar demo.</h2>
 <p align="right"><a href="http://www.raditha.com/megaupload/">Project Home</A></p>
 
-<form  enctype="multipart/form-data" action="/cgi-bin/upload.cgi?sid=<? echo $sid; ?>" method="post">
+<form  enctype="multipart/form-data" action="/cgi-bin/upload.cgi?sid=<?php echo $sid; ?>" method="post">
 
 
 <table border="0" cellpadding="10" align="center">
@@ -91,4 +91,4 @@ specially if you are on a high speed connection.
 </html>
 
 
-<?// create_footer(); ?>
+<?php // create_footer(); ?>

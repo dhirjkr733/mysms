@@ -1,10 +1,31 @@
 <?php
+ob_start();
+session_start();
 
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 $this_page_title = "Manage Editors";
-session_start(); // use on all pages for session mgmt!
-include("config1.inc.php"); // stores important required info
+ // use on all pages for session mgmt!
+include("config1.inc.php"); // stores important required info 
+  
+                               // echo $sess_login = $login;
+			//	echo $sess_password = $password;
+                        //	echo $time_last_verified = time(); // seconds since epoch
+			//	echo $utype = $type;
+			//	echo $uid = $u_id;
+			//	echo $fname = $firstname;
+                          //  echo    $sess_login =  $_SESSION["sess_login"];
+                            //echo  $sess_password =  $_SESSION["sess_password"];
+                            //echo  $time_last_verified = $_SESSION["time_last_verified"];
+                            //echo  $utype =  $_SESSION["utype"];
+                            //echo  $uid = $_SESSION["uid"];
+                             //echo $fname = $_SESSION["fname"];
+                                
+//echo $login;  die;
 $page_title .= " - "; $page_title .= $this_page_title;  // additional title for this page
+//echo $auth_header; echo $$header; echo $formtools; die;
 include($auth_header);  // authorization stuff referenced in config file, can override default
+//echo 'test'; echo $auth_header; die;
 include($header); // HTML header include referenced in config file or could override here
 include($formtools);  // verification routines
 
