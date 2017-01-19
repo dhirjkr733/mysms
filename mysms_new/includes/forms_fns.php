@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * @return void
  * @param $fieldname string
@@ -29,7 +29,7 @@ function showProductSelect ($fieldname, $default_option='', $style='', $empty_op
 	}
 	if ($other) print "<option value=\"Other\">Other</option>\n";
 	print "</select>";
-}
+} 
 function showProductSelectFiltered ($fieldname, $default_option='', $style='', $empty_option_text='Choose a Product', $params = '',$other=false,$filterlist) {
 	global $PRODUCT_ARRAY;
 	if ($style !== '') {
@@ -52,7 +52,7 @@ function showProductSelectFiltered ($fieldname, $default_option='', $style='', $
 	}
 	if ($other) print "<option value=\"Other\">Other</option>\n";
 	print "</select>";
-}
+} 
 /**
  * @return void
  * @param $fieldname string
@@ -158,7 +158,7 @@ function form_login_sso ($action, $method='POST', $forgot_password_target='') {
 			<input name="email" type="text" size="25" class="textField" value="<?=$rememberemail;?>" /><br />
 			MySMS Password<br />
 			<input name="password" type="password" size="25" class="textField" value="<?=$rememberpassword;?>" /><br />
-			<div class="remember"><input name="remeberme" type="checkbox" <?if(isset($_COOKIE['ftp'])) echo'checked="checked"';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
+			<div class="remember"><input name="remeberme" type="checkbox" <?php if(isset($_COOKIE['ftp'])) echo'checked="checked"';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
 			<br /><br />
 			<a href="<?php print $forgot_password_target ?>" class="forgot">Forgot password?</a>
 			</form>
@@ -190,7 +190,7 @@ function form_login_test ($action, $method='POST', $forgot_password_target='') {
 	  if(@$count = mysql_num_rows($rs)){
 	  	$rec 				= mysql_fetch_array($rs);
 	  	$rememberemail  	= $rec['email'];
-	  	// 2011-01-13 - Update ÔMySMS PasswordÕ login cookie to retain the UserÕs ÔEmail AddressÕ only when the ÒRemember MeÓ checkbox is checked
+	  	// 2011-01-13 - Update ï¿½MySMS Passwordï¿½ login cookie to retain the Userï¿½s ï¿½Email Addressï¿½ only when the ï¿½Remember Meï¿½ checkbox is checked
 	  	//$rememberpassword  	= $rec['password'];
 	  	$rememberpassword = '';
 	  	mysql_free_result($rs);
@@ -210,7 +210,7 @@ function form_login_test ($action, $method='POST', $forgot_password_target='') {
 			<input name="email" type="text" size="25" class="textField" value="<?=$rememberemail;?>" /><br />
 			MySMS Password<br />
 			<input name="password" type="password" size="25" class="textField" value="<?=$rememberpassword;?>" /><br />
-			<div class="remember"><input name="remeberme" type="checkbox" <?if(isset($_COOKIE['ftp']))echo'checked';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
+			<div class="remember"><input name="remeberme" type="checkbox" <?php if(isset($_COOKIE['ftp']))echo'checked';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
 			<br /><br />
 			<a href="<?php print $forgot_password_target ?>" class="forgot">Forgot password?</a>
 			</form>
@@ -224,6 +224,7 @@ function form_login_test ($action, $method='POST', $forgot_password_target='') {
 <?php
 }
 
+
 function form_login ($action, $method='POST', $forgot_password_target='') {
 
     if(isset($_COOKIE['ftp'])){
@@ -234,7 +235,7 @@ function form_login ($action, $method='POST', $forgot_password_target='') {
 	  if(@$count = mysql_num_rows($rs)){
 	  	$rec 				= mysql_fetch_array($rs);
 	  	$rememberemail  	= $rec['email'];
-	  	// 2011-01-13 - Update ÔMySMS PasswordÕ login cookie to retain the UserÕs ÔEmail AddressÕ only when the ÒRemember MeÓ checkbox is checked
+	  	// 2011-01-13 - Update ï¿½MySMS Passwordï¿½ login cookie to retain the Userï¿½s ï¿½Email Addressï¿½ only when the ï¿½Remember Meï¿½ checkbox is checked
 	  	//$rememberpassword  	= $rec['password'];
 	  	$rememberpassword = '';
 	  	mysql_free_result($rs);
@@ -254,7 +255,7 @@ function form_login ($action, $method='POST', $forgot_password_target='') {
 			<input name="email" type="text" size="25" class="textField" value="<?=$rememberemail;?>" /><br />
 			MySMS Password<br />
 			<input name="password" type="password" size="25" class="textField" value="<?=$rememberpassword;?>" /><br />
-			<div class="remember"><input name="remeberme" type="checkbox" <?if(isset($_COOKIE['ftp']))echo'checked';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
+			<div class="remember"><input name="remeberme" type="checkbox" <?php if(isset($_COOKIE['ftp']))echo'checked';?> />&nbsp;Remember Me</div> <input name="login" type="hidden" size="18" value="login"> <a href="javascript:document.login.submit();"><img src="/images/btn_go.gif" class="goBtn" border="0" /></a><input type="image" src="/images/spacer.gif">
 			<br /><br />
 			<a href="<?php print $forgot_password_target ?>" class="forgot">Forgot password?</a>
 			</form>
@@ -265,8 +266,52 @@ function form_login ($action, $method='POST', $forgot_password_target='') {
 	</tr>
 </table>
 
+<!--
+  <table width="170" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="15" class="text1"><img src="/images/spacer.gif" width="1" height="1"></td>
+    </tr>
+    <tr>
+      <td class="text1">E-mail Address<br>
+          <input name="email" type="text" size="18" value="<?=$rememberemail;?>">
+      </td>
+    </tr>
+    <tr>
+      <td height="5" class="text1"><img src="/images/spacer.gif" width="1" height="1"></td>
+    </tr>
+    <tr>
+      <td class="text1">MySMS Password<br>
+          <input name="password" type="password" size="18" value="<?=$rememberpassword;?>">
+      </td>
+    </tr>
+    <tr>
+      <td class="text1"><input name="remeberme" type="checkbox" <?if(isset($_COOKIE['ftp']))echo'checked';?>> Remember Me <input type="image" src="/images/spacer.gif"></td>
+    </tr>
+    <tr>
+      <td height="5" class="text1"><img src="/images/spacer.gif" width="5" height="5">
+      <input name="login" type="hidden" size="18" value="login"></td>
+    </tr>
+    <tr>
+      <td class="nav1"><table width="170" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
+            <td width="46"><a href="javascript:document.login.submit();">Login</a></td>
+            <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
+            <td width="104"><a href="<?php //print $forgot_password_target ?>">Forgot password?</a></td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td height="10" class="text1"><img src="/images/spacer.gif" width="5" height="5"></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+-->
+
 <?php
-}
+} 
 /**
  * @return void
  * @param info array
@@ -295,12 +340,12 @@ function showhideCounties(){
 			<form name="register" method="post" action="register_confirm.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : ""; ?>">
                   </td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td align="left" class="text1">Confirm Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td align="left" class="text1">Confirm E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email1" class="uploadinputs" value="<?php print $edit ? $info['email1'] : ""; ?>">
                   </td>
                 </tr>
@@ -501,7 +546,7 @@ function showhideCounties(){
               </table>
               </form>
 <?php
-}
+}  
 /**
  * @return void
  * @param info array
@@ -514,7 +559,7 @@ function form_delete_user($info="") {
 			<form name="edit_user" method="post" action="edit_user_confirmation.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;</td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;</td>
                   <td><input name="email" type="hidden" class="uploadinputs" value="<?php print stripslashes($info['email']); ?>"><?php print stripslashes($info['email']); ?>
                   </td>
                 </tr>
@@ -580,7 +625,7 @@ function form_delete_user($info="") {
                   <td><?php print fix_phone_out($info['fax']); ?>
                   </td>
                 </tr>
-                <? } ?>
+                <?php } ?>
                 <tr bgcolor="#FFFFFF" class="textbody">
                   <td align="left" valign="top" class="text1">&nbsp;</td>
                   <td valign="top">&nbsp;</td>
@@ -621,7 +666,7 @@ function form_delete_user($info="") {
               </table>
               </form>
 <?php
-}
+} 
 /**
  * @return void
  * @param $info array
@@ -652,7 +697,7 @@ function showhideCounties(){
 			<form name="edit_user" method="post" action="<?php print $target; ?>">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? stripslashes($info['email']) : ""; ?>">
                   </td>
                 </tr>
@@ -903,6 +948,7 @@ function showhideCounties(){
               </form>
 <?php
 }
+
 /**
  * @return void
  * @param info array
@@ -931,12 +977,12 @@ function showhideCounties(){
 			<form name="add_user" method="post" action="edit_user_confirmation.php">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : ""; ?>">
                   </td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td align="left" class="text1">Confirm Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td align="left" class="text1">Confirm E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email1" class="uploadinputs" value="<?php print $edit ? $info['email1'] : ""; ?>">
                   </td>
                 </tr>
@@ -1615,7 +1661,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -1679,7 +1725,7 @@ function showhideCounties(){
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
                   <td align="left" class="text1">&nbsp;</td>
-                  <td><span class="text1"><b>SMS Customer Support Hours:</b><br>
+                  <td><span class="text1"><b>Help Desk Hours:</b><br>
                     9:00 a.m. - 8:30 p.m. (Eastern)<br>
                     6:00 a.m. - 5:30 p.m. (Pacific)<br>
                     After Hours Support is available at $150/hr </span></td>
@@ -1832,7 +1878,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -1979,7 +2025,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="79" align="left" class="text1">Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="79" align="left" class="text1">E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2017,8 +2063,11 @@ function showhideCounties(){
                           <td width="40"><input name="Iaminterestedin[]" type="checkbox" id="Iaminterestedin[]" value="Imaging Solutions" size="20"<?php if (in_array('Imaging Solutions',$iaminterestedin)) print " checked"; ?>></td>
                           <td width="230" class="text1">Imaging Solutions</td>
                           <td width="40"><input name="Iaminterestedin[]" type="checkbox" id="Iaminterestedin[]" value="Other" size="20"<?php if (in_array('Other',$iaminterestedin)) print " checked"; ?>></td>
-                          <td width="230" class="text1">Other:&nbsp;&nbsp;
-                              <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interest(s)2" size="20" value="<?php print $info['Other Interest(s)']; ?>"></td>
+<!--                          <td width="230" class="text1">Other:&nbsp;&nbsp;
+                            <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interest(s)2" size="20" value="<?php print $info['Other Interest(s)']; ?>"></td>
+                        -->
+                           <td width="230" class="text1">Other:&nbsp;&nbsp;
+                            <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interests2" size="20" value="<?php  print $info['Other Interest(s)']; ?>"></td>
                         </tr>
                         <tr valign="middle" class="textbody">
                           <td width="40"><input name="Iaminterestedin[]" type="checkbox" id="Iaminterestedin[]" value="Escrow, Closing & Title Production Systems" size="20"<?php if (in_array('Escrow, Closing & Title Production Systems',$iaminterestedin)) print " checked"; ?>></td>
@@ -2201,7 +2250,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="79" align="left" class="text1">Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="79" align="left" class="text1">E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2240,7 +2289,10 @@ function showhideCounties(){
                           <td width="280" class="text1">Imaging Solutions</td>
                           <td width="40"><input name="Iaminterestedin[]" type="checkbox" id="Iaminterestedin[]" value="Other" size="20"<?php if (in_array('Other',$iaminterestedin)) print " checked"; ?>></td>
                           <td width="230" class="text1">Other:&nbsp;&nbsp;
-                              <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interest(s)2" size="20" value="<?php print $info['Other Interest(s)']; ?>"></td>
+<!--                              <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interest(s)2" size="20" value="<?php print $info['Other Interest(s)']; ?>">-->
+                          <input name="Other Interest(s)" type="text" class="inputfield" id="Other Interests2" size="20" value="<?php print $info['Other Interest(s)']; ?>">
+
+                          </td>
                         </tr>
                         <tr valign="middle" class="textbody">
                           <td width="40"><input name="Iaminterestedin[]" type="checkbox" id="Iaminterestedin[]" value="Escrow, Closing &amp; Title Production Systems" size="20"<?php if (in_array('Escrow, Closing &amp; Title Production Systems',$iaminterestedin)) print " checked"; ?>></td>
@@ -2340,7 +2392,7 @@ function showhideCounties(){
 }
 </script>
 			<!--<form name="changerequest" method="post" action="change_request_confirm.php" enctype="multipart/form-data">-->
-			<form name="changerequest" method="POST" action="/cgi-bin/upload.cgi?sid=<? echo $sid; ?>" enctype="multipart/form-data">
+			<form name="changerequest" method="POST" action="/cgi-bin/upload.cgi?sid=<?php echo $sid; ?>" enctype="multipart/form-data">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
                   <td width="150" align="left" class="text1">First Name:&nbsp;<b><font color="#CC0000">* </font></b></td>
@@ -2429,7 +2481,7 @@ function showhideCounties(){
                   <td valign="top">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Email Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">E-mail Address:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2524,7 +2576,7 @@ function showhideCounties(){
 }
 </script>
 			<!--<form name="changerequest" method="post" action="change_request_confirm.php" enctype="multipart/form-data">-->
-			<form name="uploaddocuments" method="POST" action="/cgi-bin/upload.cgi?sid=<? echo $sid; ?>" enctype="multipart/form-data">
+			<form name="uploaddocuments" method="POST" action="/cgi-bin/upload.cgi?sid=<?php echo $sid; ?>" enctype="multipart/form-data">
               <table width="515"  border="0" cellspacing="0" cellpadding="0">
                 <tr bgcolor="#FFFFFF" class="textbody">
                   <td width="150" align="left" class="text1">Your First Name:&nbsp;<b><font color="#CC0000">* </font></b></td>
@@ -2566,7 +2618,7 @@ function showhideCounties(){
     (Shown only if CA selected)</td>
                 </tr>
                 <tr bgcolor="#FFFFFF" class="textbody">
-                  <td width="150" align="left" class="text1">Your Email:&nbsp;<b><font color="#CC0000">* </font></b></td>
+                  <td width="150" align="left" class="text1">Your E-mail:&nbsp;<b><font color="#CC0000">* </font></b></td>
                   <td><input type="text" name="email" class="uploadinputs" value="<?php print $edit ? $info['email'] : stripslashes($user['email']); ?>">
                   </td>
                 </tr>
@@ -2617,7 +2669,7 @@ function showhideCounties(){
                    	<input type="button" value="Submit Document" onClick="postIt(this.form);"></td>
                 </tr>
               </table>
-              <!--<input type="hidden" name=userid value='<?=$_SESSION['userid'];?>'>-->
+              <!--<input type="hidden" name=userid value='<? =$_SESSION['userid'];?>'>-->
               </form>
 <?php
 }

@@ -21,7 +21,6 @@ if ($testmode) {
 	$formAction = 'http://design2.rightanswers.com:5080/firstam/ss/index.jsp';
 } else {
 	$formAction = 'http://65.200.65.98/portal/ss/';
-	//$formAction = 'https://CustomerRA.smscorp.com/portal/ss/';
 }
 ?><html>
 <head>

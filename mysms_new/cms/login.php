@@ -1,5 +1,10 @@
 <?php
-session_start(); // use on all pages !
+ob_start();
+session_start();
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
+
+ // use on all pages !
 include("config1.inc.php"); // stores important required info
 $this_page_title = "Login Management";
 //include($auth_header);  // authorization stuff referenced in config file, can override default
@@ -24,45 +29,77 @@ if ($new_login) {
 			// passwords no matchy
 			if ($queried_password != $password) { 
 				$error = "Invalid Password. Please enter a correct Password.";
+                               
 			}
 			else {
+                           
 				// good to go, set session variables
-				session_register("sess_login");
-				session_register("sess_password");
-				session_register("time_last_verified");
-				session_register("utype");      // user_type
-				session_register("uid");        // user_id
-				session_register("fname");      // first name
-
-				$sess_login = $login;
-				$sess_password = $password;
-				$time_last_verified = time(); // seconds since epoch
-				$utype = $type;
-				$uid = $u_id;
-				$fname = $firstname;
-				
+//				session_register("sess_login");
+//				session_register("sess_password");
+//				session_register("time_last_verified");
+//				session_register("utype");      // user_type
+//				session_register("uid");        // user_id
+//				session_register("fname");      // first name
+                              
+				$_SESSION["sess_login"] = $login;
+                                $_SESSION["sess_password"] = $password ;
+                                $_SESSION["time_last_verified"] = time();
+                                $_SESSION["utype"] = $type;
+                                $_SESSION["uid"] = $u_id ;
+                                $_SESSION["fname"] = $firstname ;
+                            
+                              $sess_login =  $_SESSION["sess_login"];
+                              $sess_password =  $_SESSION["sess_password"];
+                              $time_last_verified = $_SESSION["time_last_verified"];
+                              $utype =  $_SESSION["utype"];
+                              $uid = $_SESSION["uid"];
+                              $fname = $_SESSION["fname"];
+                        
+//                                $sess_login = $login;
+//				$sess_password = $password;
+//                        	$time_last_verified = time(); // seconds since epoch
+//				$utype = $type;
+//				$uid = $u_id;
+//				$fname = $firstname;
+//                                
+                               // $login = $sess_login;
+				//$password = $sess_password;
+                        	//$time_last_verified = time(); // seconds since epoch
+				//$utype = $type;
+				//$uid = $u_id;
+				//$fname = $firstname;
+                                
+                              
+				//echo $time_last_verified; die;
 				//$last_login = date("l, F j, Y, h:i a ",$last_access + $s_time_offset) . $c_time_zone;
 				$last_login = date("n/j/y, g:ia ",$last_access + $s_time_offset) . $c_time_zone;
-				$last_login = urlencode($last_login);
+                            	$last_login = urlencode($last_login);
 				
 				// update last_access
 				$update_query = mysql_query("UPDATE editor SET last_access=NOW() WHERE login='$login'",$db_conn) or die($die_mesg.mysql_error()."<BR>File: $PHP_SELF, Line: ".__LINE__);
 
 				// SET COOKIE - used only to remember display login 
 				//if (!isset($show_login)) { 
-				setcookie("show_login", $login, time()+$login_exp, "/", $cookie_domain,0); 
+				setcookie("show_login", $sess_login, time()+$login_exp, "/", $cookie_domain,0); 
+                                
+				//setcookie("show_login", $login, time()+$login_exp, "/", $cookie_domain,0); 
 				//}
-				
+                                
+				//die;
 				// clean any tacked on variables that mess up redirect
 				//$referer_stripped = strtok($HTTP_REFERER,"?");
 				
 				// user type= 1 for admin or 2 for regular user, admin user goes only to manage users
 				if ($utype==1) {
-					header("Location: editors.php?last_login=$last_login");
+                                   // echo $last_login; die;
+				      header("Location: editors.php?last_login=$last_login");
+                                   // header("Location: http://local.mysms/cms/editors.php?last_login=$last_login");
 				}
 				else {
+                                    
 					header("Location: edit_list.php?last_login=$last_login");
 				}
+                          
 				exit;				
 			}
 		}
@@ -73,15 +110,17 @@ if ($new_login) {
 
 // log user OUT
 if ($man_logout || $auto_logout || $verfail) {
+   // echo $PHPSESSID; die; 
 	// might not be logged in to get here!
-	if ($PHPSESSID) {
+	//if ($PHPSESSID) {
+        if ($sess_login) {
 		// keeping master and sub org ids for correct logo display, etc., remove all other variables but keep sessionid
-		session_unregister("$sess_login");
-		session_unregister("$sess_password");
-		session_unregister("$time_last_verified");
-		session_unregister("$utype");      // user_type
-		session_unregister("$uid");        // user_id
-		session_unregister("$fname");      // first name
+//		session_unregister("$sess_login");
+//		session_unregister("$sess_password");
+//		session_unregister("$time_last_verified");
+//		session_unregister("$utype");      // user_type
+//		session_unregister("$uid");        // user_id
+//		session_unregister("$fname");      // first name
 		unset($sess_login);
 		unset($sess_password);
 		unset($time_last_verified);
@@ -89,9 +128,15 @@ if ($man_logout || $auto_logout || $verfail) {
 		unset($utype);
 		unset($uid);
 		unset($fname);
+                
+                if (isset($_COOKIE[session_name()])) {
+			setcookie(session_name(), '', time()-42000, '/');
+		}
 		session_destroy();
+		ob_end_flush();
+     
 	}
-}
+} 
 
 // additional title for this page
 $page_title .= " - ";

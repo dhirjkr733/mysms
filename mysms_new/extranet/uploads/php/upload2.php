@@ -7,7 +7,7 @@
 <tr><td colspan="2" bgcolor="#0066cc"><font color="#FFFFCC" size="+1" align="center">Files Uploaded</font></td></tr>
 <tr  bgcolor="#ffff00"><td style="font-size: 110%;"><nobr>File Name</nobr></td>
 	<td style="font-size: 110%"  align="right"><nobr>File size</nobr></td></tr>
-<?
+<?php
 
 /* 
  * improved user interface contributed by Rad Inks

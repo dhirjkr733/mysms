@@ -2,7 +2,7 @@
  <head>
   <title>Progress Bar</title>
  </head>
-<?
+<?php
 /*
  * Set upload start time
  * This is set once as the point in time at which the upload was started
@@ -38,7 +38,7 @@
 ?>	
 	 
 <frameset rows="*,120" scroll="none">
-	<frame src="<? echo $link; ?>">
+	<frame src="<?php echo $link; ?>">
 	<frame src="/extranet/uploads/php/sponser.php">
 </frameset>
 

@@ -1,10 +1,14 @@
 <?php
+
 $me = $_SERVER['PHP_SELF'];  
 $Apathweb = explode("/", $me);  
 $myFileName = array_pop($Apathweb);  
 $pathweb = implode("/", $Apathweb);  
 $myURL = "http://".$_SERVER['HTTP_HOST'].$pathweb."/".$myFileName;
 $file = basename($PHP_SELF); 
+//print_r($file); 
+
+
 $dir = explode("/",dirname($PHP_SELF)); //$dir[1] will be name of directory, if "" then u r in root
 ?>
 

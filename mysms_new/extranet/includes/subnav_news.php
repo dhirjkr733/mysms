@@ -49,24 +49,24 @@
 		    <td height="5" colspan="2"><img src="/images/spacer.gif" width="1" height="5"></td>
 		  </tr>
 		  <tr valign="top">
-		    <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
-		    <td width="140" class="nav1"><a href="/extranet/news/newsletter.php" <?php if ($file=="newsletter.php") echo "class=\"highlighted\""; ?>> Product &amp; Services Catalog</a></td>
+		    <td width="10"><img src="http://10.5.6.89/mysms_test/images/arrow2.gif" width="4" height="17"></td>
+		    <td width="140" class="nav1"><a href="http://10.5.6.89/mysms_test/extranet/news/newsletter.php" <?php if ($file=="newsletter.php") echo "class=\"highlighted\""; ?>> Product &amp; Services Catalog</a></td>
         </tr>
         <tr valign="top">
           <td height="5" colspan="2"><img src="/images/spacer.gif" width="1" height="5"></td>
         </tr>
         <tr valign="top">
           <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
-          <td><a href="/extranet/news/mailing_list.php" <?php if ($file=="mailing_list.php") echo "class=\"highlighted\""; ?>>Join our Mailing List </a></td>
+          <td><a href="http://10.5.6.89/mysms_test/extranet/news/mailing_list.php" <?php if ($file=="mailing_list.php") echo "class=\"highlighted\""; ?>>Join our Mailing List </a></td>
         </tr>
 		  <tr valign="top">
-		    <td height="5" colspan="2"><img src="/images/spacer.gif" width="1" height="5"></td>
+		    <td height="5" colspan="2"><img src="http://10.5.6.89/mysms_test/images/spacer.gif" width="1" height="5"></td>
 		  </tr>
 	    </table>
 	</td>
   </tr>
 	<tr valign="top">
-	    <td width="25" height="20"><img src="/images/arrow1.gif" width="21" height="17"></td>
-	    <td><a href="http://mysms.firstamsms.com/"><img src="/images/ft_mysmshome.gif" width="79" height="17" border="0"></a></td>
+	    <td width="25" height="20"><img src="http://10.5.6.89/mysms_test/images/arrow1.gif" width="21" height="17"></td>
+	    <td><a href="http://10.5.6.89/mysms_test/"><img src="http://10.5.6.89/mysms_test/images/ft_mysmshome.gif" width="79" height="17" border="0"></a></td>
   </tr>
 </table>

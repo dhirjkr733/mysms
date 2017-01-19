@@ -1,7 +1,7 @@
 <?php
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/config1.inc"); // stores important required info
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/config1.inc"); // stores important required info
 include($displaytools); // required for output
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/filter.inc"); // needed for content filtering
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/filter.inc"); // needed for content filtering
 // #CMS_Start - DO NOT ALTER THIS LINE
 // #CMS_End - DO NOT ALTER THIS LINE
 // CMS Start & Add lines must immediately preceed and follow edit_ary
