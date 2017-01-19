@@ -146,7 +146,8 @@ function getFile($filename)
  * @param int[optional] $line_max
  * @desc Encode string with quoted_printable.
 */
-/* removed because of php5 function
+//drj 161216 commented below fns
+/*
 function quoted_printable_encode($input, $line_max = 76)
 {
     $hex    = array('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F');
@@ -180,6 +181,7 @@ function quoted_printable_encode($input, $line_max = 76)
 
     return trim($output);
 }
+
 */
 /**
  * @access public

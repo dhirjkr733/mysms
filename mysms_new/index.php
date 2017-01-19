@@ -1,11 +1,15 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'].'/includes/mysms_fns.php'); ?>
 <?php 
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
+
+require_once($_SERVER['DOCUMENT_ROOT'].'/includes/mysms_fns.php'); 
+
 if (isset($_GET['logout'])) {
 	
 	session_start();
 	$_SESSION = array();
 	if (isset($_COOKIE[session_name()])) {
-		setcookie(session_name(), '', time()-42000, '/');		
+///		setcookie(session_name(), '', time()-42000, '/');		
 	}
 	session_destroy();
 	//setcookie("ftp2", "6", time() + 3600);
@@ -71,7 +75,9 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
 		<td width="180" class="formBG">&nbsp;</td>
 		<td width="386" valign="middle"><img src="images/welcometomysms.gif"></td>
 		<td width="188">
-			<?php form_login_sso('http://mysms.firstamsms.com/extranet/index.php','POST','https://cms.external.smscorp.com/ForgotPassword.aspx'); ?>
+			<?php 
+form_login_sso('http://local.mysms/extranet/index.php','POST','https://cms.external.smscorp.com/ForgotPassword.aspx'); 
+//form_login_sso('http://mysms.firstamsms.com/extranet/index.php','POST','https://cms.external.smscorp.com/ForgotPassword.aspx'); ?>
 		</td>
 	</tr>
 	<!--

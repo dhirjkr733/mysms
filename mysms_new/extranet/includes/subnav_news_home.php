@@ -97,7 +97,7 @@
 				</tr>
 				<tr valign="top">
           <td width="10"><img src="/images/arrow2.gif" width="4" height="17"></td>
-          <td><a href="/public/contact/helpdesk_sms.php">SMS Customer Support</a></td>
+          <td><a href="/public/contact/helpdesk_sms.php">Help Desk</a></td>
         </tr>
 				<tr valign="top">
 					<td height="5" colspan="2"><img src="/images/spacer.gif" width="1" height="5"></td>

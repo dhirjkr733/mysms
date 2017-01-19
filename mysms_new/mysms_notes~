@@ -1,0 +1,25 @@
+16-12-16
+1.commented quoted_printable_encode function db_fns line 151
+2. form_fns line 2068, id value; Interests2 
+3. added : $testmode = TRUE; line 11;
+
+:::::: 20-12-16:::::
+1. cms url change: to localhost line 6, 14.
+
+pm2net : ²omê»|    - creGes8b
+
+
+admin  : pass : /*É–J¶‘²£      -  admin2mysms
+
+include single_signon change test service comment :line 13 added line 14.
+commented loginphp - line 36 t0 41.
+
+:::::::::::221216:::::::::::::::::
+
+changed login page session 
+
+$basepath = "http://10.5.6.89/mysms_test"; 
+
+<?php echo $basepath; ?>
+
+http://10.5.6.89/mysms_test/

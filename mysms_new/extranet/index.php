@@ -1,6 +1,8 @@
 <?php 
 ob_start();
 session_start();
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 header("Cache-control: private");
 require_once($_SERVER['DOCUMENT_ROOT'].'/includes/mysms_fns.php');
 
@@ -44,7 +46,7 @@ if (isset($_POST['login'])) {// coming from login form
 					$_SESSION['default_product'] = $user_info['LoginResponse']['DefaultProduct']['ProductName'];
 					$_SESSION['usertoken'] = $user_info['LoginResponse']['UserToken'] ;
 					$_SESSION['rawdata'] = $user_info['LoginResponse']['RawData'] ;
-					
+					//print_r($user_info); die;
 					// CREATE DB SESSION LOG
 					$log_sql = "INSERT INTO `login_session` VALUES ('" . session_id() . "','" . $user_info['LoginResponse']['UserToken'] . "', NOW())";
 					mysql_query($log_sql);
@@ -59,7 +61,7 @@ if (isset($_POST['login'])) {// coming from login form
 			}
 		}
 	} else {
-		$login_error = "Your Email Address and/or MySMS Password was missing. Please <a href=\"".APPLICATION_HOME_PAGE."\">try again</a>.";
+		$login_error = "Your E-mail Address and/or MySMS Password was missing. Please <a href=\"".APPLICATION_HOME_PAGE."\">try again</a>.";
 	}
 } else {
 	$logged_in = checkUser($_SESSION['userid']);
@@ -103,7 +105,8 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
 <body leftmargin="5" topmargin="0" marginwidth="0" marginheight="0">
 
   <a name="top"></a>
-  <?php require_once($_SERVER['DOCUMENT_ROOT'].'/extranet/includes/header.php'); ?>
+  <?php require_once($_SERVER['DOCUMENT_ROOT'].'/extranet/includes/header.php');
+  ?>
   <table width="755" height="150" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td width="180"><img src="/images/toppic_home.jpg" width="181" height="150" vspace="0"></td>

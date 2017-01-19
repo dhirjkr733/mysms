@@ -501,7 +501,7 @@ function deleteMember(num) {
            			print "<a href=\"javascript:deleteMember({$row['id']});\" class=\"text1\">Delete</a>\n";
           	?></td>
         </tr>
-        <?
+        <?php
         		}
         	} else {
         ?>

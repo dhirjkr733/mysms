@@ -5,11 +5,14 @@
   </tr>
   <tr valign="top">
     <td>&nbsp;</td>
+    
     <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="145" height="150">
-      <param name="movie" value="http://mysms.firstamsms.com/swf/newsticker.swf">
-      <param name="wmode" value="transparent">
+<!--      <param name="movie" value="http://mysms.firstamsms.com/swf/newsticker.swf">-->
+ <param name="movie" value="http://local.mysms/swf/newsticker.swf">     
+            <param name="wmode" value="transparent">
       <param name="quality" value="high">
-      <embed src="http://mysms.firstamsms.com/swf/newsticker.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="145" height="150" wmode="transparent"></embed>
-    </object></td>
+      <embed src="http://local.mysms/swf/newsticker.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="145" height="150" wmode="transparent"></embed>
+<!--     <embed src="http://mysms.firstamsms.com/swf/newsticker.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="145" height="150" wmode="transparent"></embed>-->
+        </object></td>
   </tr>
 </table>

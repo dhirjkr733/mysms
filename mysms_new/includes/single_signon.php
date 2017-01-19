@@ -8,8 +8,10 @@ define('PROXY_USERNAME', '');
 define('PROXY_PASSWORD', '');
 define('USE_CURL', true);
 define('USE_WSDL',true);
+$testmode = TRUE;
 if ($testmode) {
 	define('WSDL_URL','http://AcctValCMS.beta.smscorp.com/CMSValidation.svc?wsdl');
+        //define('WSDL_URL','https://AcctValCMS.smscorp.com/CMSValidation.svc?wsdl');
 } else {
 	define('WSDL_URL','https://AcctValCMS.smscorp.com/CMSValidation.svc?wsdl');
 }

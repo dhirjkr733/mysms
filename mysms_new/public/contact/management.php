@@ -1,7 +1,7 @@
 <?php
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/config1.inc"); // stores important required info
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/config1.inc"); // stores important required info
 include($displaytools); // required for output
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/filter.inc"); // needed for content filtering
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/filter.inc"); // needed for content filtering
 // #CMS_Start - DO NOT ALTER THIS LINE
 $edit_ary = array (
 	"chunk1" => array (

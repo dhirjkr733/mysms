@@ -1,8 +1,8 @@
 <?php
 /*
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/config1.inc"); // stores important required info
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/config1.inc"); // stores important required info
 include($displaytools); // required for output
-include("/home/httpd/vhosts/mysms.firstamsms.com/html/cms/filter.inc"); // needed for content filtering
+include("/home/httpd/vhosts/mysms.firstamsms.com/httpdocs/cms/filter.inc"); // needed for content filtering
 // #CMS_Start - DO NOT ALTER THIS LINE
 $edit_ary = array (
 	"chunk1" => array (
@@ -79,7 +79,7 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
 <link href="../styles.css" rel="stylesheet" type="text/css">
 </head>
 
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../../images/bt_products_on.gif','../../images/bt_aboutus_on.gif','../../images/bt_demoroom_on.gif','../../images/bt_events_on.gif','../../images/bt_contact_on.gif','../../images/bt_login_on.gif','../../images/bt_features_on.gif','../../images/bt_back_on.gif','../../images/bt_benefits_on.gif','../../images/bt_requestinfo_on.gif','../../images/bt_management_on.gif','../../images/bt_helpdesk_on.gif','../../images/bt_trusthelpdesk_on.gif','../../images/bt_1099helpdesk_on.gif','../../images/bt_officedirectory_on.gif','../../images/bt_productinquiry_on.gif')">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../../images/bt_products_on.gif','../../images/bt_aboutus_on.gif','../../images/bt_demoroom_on.gif','../../images/bt_events_on.gif','../../images/bt_contact_on.gif','../../images/bt_login_on.gif','../../images/bt_features_on.gif','../../images/bt_back_new_on.gif','../../images/bt_benefits_on.gif','../../images/bt_requestinfo_on.gif','../../images/bt_management_on.gif','../../images/bt_helpdesk_new_on.gif','../../images/bt_trusthelpdesk_new_on.gif','../../images/bt_1099helpdesk_new_on.gif','../../images/bt_officedirectory_on.gif','../../images/bt_productinquiry_on.gif')">
 <script language="JavaScript1.2">mmLoadMenus();</script> 
 <a name="top"></a>
 <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
@@ -128,7 +128,7 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
         <tr> 
           <td width="170" valign="top"><img src="../../images/toptab_red.gif" width="170" height="36"></td>
           <td width="34"><img src="../../images/hd_columnspacer.gif" width="34" height="36"></td>
-          <td width="576"><!-- InstanceBeginEditable name="section_title" --><img src="../../images/hd_smshelpdesk.gif" width="576" height="36"><!-- InstanceEndEditable --></td>
+          <td width="576"><!-- InstanceBeginEditable name="section_title" --><img src="../../images/hd_smshelpdesk_new.gif" width="576" height="36"><!-- InstanceEndEditable --></td>
         </tr>
         <tr> 
           <td width="170" valign="top"><!-- InstanceBeginEditable name="leftphoto" --><img src="../../images/leftpic_contact2.jpg" width="170" height="135"><!-- InstanceEndEditable --><br> 
@@ -139,13 +139,13 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
               <tr> 
 
                 <td height="5"> 
-                  <a href="/public/contact/helpdesk_sms.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('helpdesk','','../../images/bt_helpdesk_on.gif',1)"><img src="../../images/bt_helpdesk_off.gif" name="helpdesk" width="150" height="18" hspace="5" vspace="10" border="0"></a><br> 
+                  <a href="/public/contact/helpdesk_sms.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('helpdesk','','../../images/bt_helpdesk_new_on.gif',1)"><img src="../../images/bt_helpdesk_new_off.gif" name="helpdesk" width="112" height="18" hspace="5" vspace="10" border="0"></a><br> 
 
-                  <a href="/public/contact/helpdesk_trustacct.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('trustacct','','../../images/bt_trusthelpdesk_on.gif',1)"><img src="../../images/bt_trusthelpdesk_off.gif" name="trustacct" width="145" height="18" hspace="5" vspace="10" border="0"></a><br> 
+                  <a href="/public/contact/helpdesk_trustacct.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('trustacct','','../../images/bt_trusthelpdesk_new_on.gif',1)"><img src="../../images/bt_trusthelpdesk_new_off.gif" name="trustacct" width="145" height="18" hspace="5" vspace="10" border="0"></a><br> 
 
-                  <a href="/public/contact/helpdesk_1099.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1099','','../../images/bt_1099helpdesk_on.gif',1)"><img src="../../images/bt_1099helpdesk_off.gif" name="1099" width="145" height="18" hspace="5" vspace="10" border="0"></a><br> 
+                  <a href="/public/contact/helpdesk_1099.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1099','','../../images/bt_1099helpdesk_new_on.gif',1)"><img src="../../images/bt_1099helpdesk_new_off.gif" name="1099" width="145" height="18" hspace="5" vspace="10" border="0"></a><br> 
 
-                  <a href="http://mysms.firstamsms.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('back','','../../images/bt_back_on.gif',1)"><img src="../../images/bt_back_off.gif" name="back" width="57" height="18" hspace="5" vspace="10" border="0"></a><br> 
+                  <a href="http://mysms.firstamsms.com" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('back','','../../images/bt_back_new_on.gif',1)"><img src="../../images/bt_back_new_off.gif" name="back" width="57" height="18" hspace="5" vspace="10" border="0"></a><br> 
 
                 </td>
 
@@ -173,7 +173,7 @@ var v1=arguments,v2=v1[2].split(","),v3=(v1.length>3)?v1[3]:false,v4=(v1.length>
       <b>Fax:</b> (888) 228-9065
 <BR> 
  
-      <b>Email:</b> <a href="mailto:software.support@smscorp.com">software.support@smscorp.com</a> 
+      <b>E-mail:</b> <a href="mailto:software.support@smscorp.com">software.support@smscorp.com</a> 
 <BR> 
  
 <BR>      <b>Hours:</b><BR> 10:00 a.m. - 8:30 p.m. (Eastern)
